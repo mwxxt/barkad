@@ -1,0 +1,49 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    background: radial-gradient(50% 50% at 50% 50%, #ED1C24 0%, #BA2234 100%);
+}
+.registration_form {
+    width: 400px;
+    margin: 0 auto;
+    padding:40px;
+}
+label {
+    color: #ffffff;
+}
+.registration_form h3 {
+    color: #DDCB88;
+    text-align: center;
+}
+.registration_form_item {
+    margin: 20px auto;
+}
+.registration_form_item input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.registration_button {
+    border-radius: 50px;
+    border: none;
+    background-color: #BA2234;
+    color: #ffffff;
+    width: 250px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.registration_form .registration_button:hover{
+    background: #BA2234;
+    transform: scale(1.1);
+}

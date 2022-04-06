@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>О нас</title>
+
+        <link rel="stylesheet" href="{% static 'fonts/Montserrat/fonts.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/core.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/about_us_style.css' %}" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top_nav">
+                <div class="container">
+                    <div class="top_nav_items">
+                        <div class="top_nav_link">
+                            <a href="{% url 'about_us' %}">О нас</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="#">Как заказать?</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="{% url 'feedback' %}">Обратная связь</a>
+                        </div>
+                        <div class="search_line">
+                            <input type="text" placeholder="Введите наименование">
+                        </div>
+                        <div class="search_icon" style="background: url('{% static 'images/search_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="lan_icon" style="background: url('{% static 'images/language_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="user">
+                             <div class="user_icon" style="background: url('{% static 'images/user_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                            <a href="{% url 'authorization' %}">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_logo">
+                <div class="container">
+                    <div class="logo">
+                        <img class="logo" src="{% static 'images/barkad_logo.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav_menu line">
+                <div class="container">
+                    <div class="nav_menu_items">
+                        <div class="nav_menu_link">
+                            <a href="{% url 'index' %}">Главная</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Колбасные изделия и деликатесы</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Замороженные полуфабрикаты</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Готовые обеды</a>
+                        </div>
+                        <div class="fav_icon" style="background: url('{% static 'images/fav_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="bask_icon" style="background: url('{% static 'images/basket_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="nav_menu_text">
+                            <p>0 товар 0  сом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_company">
+                <div class="container">
+                    <div class="about_company_items">
+                        <div class="header">
+                             <h3>НЕИЗМЕННОЕ КАЧЕСТВО. НАТУРАЛЬНЫЕ ПРОДУКТЫ</h3>
+                        </div>
+                        <div class="text">
+                            <p>Компания “Баркад” была основана в апреле 2002 года. В настоящее время компания “Баркад” занимается производством замороженных полуфабрикатов и колбасных изделий, занимая лидирующие позиции на рынке КР.</p>
+                            <p>Компания приобрела высокопроизводительную итальянскую линию по изготовлению пельменей, что позволили производить продукт, без применения ручной работы. При производстве продукции ОсОО «Баркад» использует только качественные и свежие продукты: мясо свежее и чистое, муку высшего сорта, натуральное молоко, куриное яйцо, грибы, свежие ягоды, а так же другие исключительно натуральные ингредиенты .</p>
+                            <p>Для производства было закуплено и установлено новое оборудование. </p>
+                            <p>Мы производим продукт высокого качества, изготовленный только из натурального сырья без добавления СОИ, по немецкой технологии, с привлечением высококвалифицированных специалистов из Германии и Голландии, разработавших индивидуальную рецептуру для каждого вида колбасных изделий. Наши колбасы выпускаются как в натуральной так и в искусственной  оболочке, а использование вакуумной упаковки позволяет сохранять вкусовые качества продукта более длительный срок. Компания стремиться к тому, чтобы наши колбасные были отличными от имеющихся на рынке, обладали неповторимым вкусом</p>
+                            <p>Мы с уверенностью можем заявить что компания «Баркад» занимает первое место на внутреннем рынке КР по качеству продукции колбасных изделий и полу фабрикатов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_items">
+                        <div class="footer_item">
+                            <h3>Компания</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="{% url 'about_us' %}">О нас</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Акции</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Новости</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Клиентам</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как заказать ?</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как осуществляется доставка</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Способы оплаты</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Обратная связь</a>
+                            </div>
+                        </div>
+                        <div class="footer_item" style="width:250px;">
+                            <h3>Контакты</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/envelope.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">o-ce@barkad.kg</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/call.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">+996(312)461332</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 32px;height: 15px; background-image: url('{% static 'images/placeholder.svg' %}') ; margin-right: 15px;"></div>
+                                <a href="#">ОсОО «Баркад»
+                                720054, Кыргызская Республика,
+                                г.Бишкек, ул. Интергельпо, 1/8</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Социальные сети</h3>
+                            <div class="footer_item_link">
+                                <a href="https://www.instagram.com/barkad.kg/" target="_blank">
+                                    <img class="footer_icon" src="{% static 'images/instagram_icon.png' %}" alt="" >
+                                </a>
+                                <a href="https://www.facebook.com/Barkad.kg/" target="_blank">
+                                    <img class="footer_icon" src="{% static 'images/facebook_icon.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+						<p>(с)  ОсОО "Баркад", 2022.</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

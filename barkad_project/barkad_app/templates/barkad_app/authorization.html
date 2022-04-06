@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Авторизация</title>
+
+        <link rel="stylesheet" href="{% static 'fonts/Montserrat/fonts.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/core.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/authorization_style.css' %}" type="text/css">
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top_nav">
+                <div class="container">
+                    <div class="top_nav_items">
+                        <div class="top_nav_link">
+                            <a href="{% url 'about_us' %}">О нас</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="#">Как заказать?</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="#">Обратная связь</a>
+                        </div>
+                        <div class="search_line">
+                            <input type="text" placeholder="Введите наименование">
+                        </div>
+                        <div class="search_icon" style="background: url('{% static 'images/search_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="lan_icon" style="background: url('{% static 'images/language_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="user">
+                             <div class="user_icon" style="background: url('{% static 'images/user_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                            <a href="{% url 'authorization' %}">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_logo">
+                <div class="container">
+                    <div class="logo">
+                        <img class="logo" src="{% static 'images/barkad_logo.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav_menu line">
+                <div class="container">
+                    <div class="nav_menu_items">
+                        <div class="nav_menu_link">
+                            <a href="{% url 'index' %}">Главная</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Колбасные изделия и деликатесы</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Замороженные полуфабрикаты</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Готовые обеды</a>
+                        </div>
+                        <div class="fav_icon" style="background: url('{% static 'images/fav_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="bask_icon" style="background: url('{% static 'images/basket_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="nav_menu_text">
+                            <p>0 товар 0  сом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="authorization_block">
+                <div class="container">
+                    <div class="authorization_form">
+                        <h3>Авторизация</h3>
+                        <form action="">
+                            <div class="authorization_form_item">
+                                <label for="login">Логин</label>
+                                <input id="login" type="text" name="login" autocomplete="off" required>
+                            </div>
+                            <div class="authorization_form_item">
+                                <label for="pass">Пароль</label>
+                                <input id="pass" type="password" name="pass" autocomplete="off" required>
+                            </div>
+                            <div class="authorization_form_item">
+                                <a class="forgot_password" href="#"> Забыли пароль?</a>
+                            </div>
+                            <button class="authorization_button" type="submit">Войти</button>
+                            <div class="authorization_form_item reg_block">
+                                <p>Ещё нет аккаунта?<a href="{% url 'registration' %}" style="text-decoration: underline;font-size: 12px;">Зарегистрируйтесь</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_items">
+                        <div class="footer_item">
+                            <h3>Компания</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="{% url 'about_us' %}">О нас</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Акции</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Новости</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Клиентам</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как заказать ?</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как осуществляется доставка</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Способы оплаты</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Обратная связь</a>
+                            </div>
+                        </div>
+                        <div class="footer_item" style="width:250px;">
+                            <h3>Контакты</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/envelope.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">o-ce@barkad.kg</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/call.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">+996(312)461332</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 32px;height: 15px; background-image: url('{% static 'images/placeholder.svg' %}') ; margin-right: 15px;"></div>
+                                <a href="#">ОсОО «Баркад»
+                                720054, Кыргызская Республика,
+                                г.Бишкек, ул. Интергельпо, 1/8</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Социальные сети</h3>
+                            <div class="footer_item_link">
+                                <a href="https://www.instagram.com/barkad.kg/" target="_blank">
+                                    <img class="footer_icon" src="{% static 'images/instagram_icon.png' %}" alt="" >
+                                </a>
+                                <a href="https://www.facebook.com/Barkad.kg/" target="_blank">
+                                    <img class="footer_icon" src="{% static 'images/facebook_icon.png' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+						<p>(с)  ОсОО "Баркад", 2022.</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

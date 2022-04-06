@@ -1,0 +1,118 @@
+/******************************Рекламный блок*********************************/
+.ad_block_items .ad {
+    width: 1000px;
+    height: 600px;
+    background: #BF2132;
+    margin: 20px auto;
+}
+.ad_ellips {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    margin: 0 auto;
+}
+.ad_ellips .ellips {
+    width: 8px;
+    height: 8px;
+    background: #DDCB88;
+    border-radius: 50%;
+}
+/******************************Навигационное меню продуктов(Хиты продаж и т.д.)*********************************/
+.products_nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto 30px;
+    width: 800px;
+}
+.products_nav_items .products_nav_link a {
+    color: #DDCB88;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+.products_nav_link a:hover {
+    border-bottom:3px solid #DDCB88;
+}
+/******************************Блок с продуктами (хиты продаж и т.д.)*********************************/
+.product_block_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.product_block_item {
+    width: 300px;
+    height: 380px;
+    background: #BF2132;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product_block_item .fav_icon {
+    margin-left: 165px;
+}
+.product_image {
+    width: 200px;
+    height: 240px;
+}
+.price_basket {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 240px;
+}
+.product_weight p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+}
+.price_basket .product_price p {
+    color: #DDCB88;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.price_basket .bask_icon {
+    margin-left: 114px;
+}
+.product_name h5 {
+    color: #ffffff;
+    width: 185px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+}
+/******************************Блок загрузки приложения*********************************/
+.download_block_items {
+    width: 1000px;
+    height: 200px;
+    background: #BF2132;
+    margin: 100px auto;
+}
+.download_block_items .download_text h2 {
+    color: #DDCB88;
+    padding: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+.download_block_items .download_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download_buttons .download_googlePlay {
+    width: 190px;
+    height: 50px;
+    margin-right: 50px;
+}
+.download_buttons .download_appStore {
+    width: 190px;
+    height: 50px;
+}

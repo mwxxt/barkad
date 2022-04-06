@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная</title>
+
+        <link rel="stylesheet" href="{% static 'fonts/Montserrat/fonts.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/core.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/product.css' %}" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top_nav">
+                <div class="container">
+                    <div class="top_nav_items">
+                        <div class="top_nav_link">
+                            <a href="{% url 'about_us' %}">О нас</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="#">Как заказать?</a>
+                        </div>
+                        <div class="top_nav_link">
+                            <a href="{% url 'feedback' %}">Обратная связь</a>
+                        </div>
+                        <div class="search_line">
+                            <input type="text" placeholder="Введите наименование">
+                        </div>
+                        <div class="search_icon" style="background: url('{% static 'images/search_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="lan_icon" style="background: url('{% static 'images/language_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="user">
+                             <div class="user_icon" style="background: url('{% static 'images/user_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                            <a href="{% url 'authorization' %}">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_logo">
+                <div class="container">
+                    <div class="logo">
+                        <img class="logo" src="{% static 'images/barkad_logo.png' %}" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="nav_menu line">
+                <div class="container">
+                    <div class="nav_menu_items">
+                        <div class="nav_menu_link">
+                            <a href="{% url 'index' %}">Главная</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Колбасные изделия и деликатесы</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="{% url 'allproducts' %}">Замороженные полуфабрикаты</a>
+                        </div>
+                        <div class="nav_menu_link">
+                            <a href="#">Готовые обеды</a>
+                        </div>
+                        <div class="fav_icon" style="background: url('{% static 'images/fav_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="bask_icon" style="background: url('{% static 'images/basket_icon.svg' %}') center no-repeat; width: 30px; height: 30px;"></div>
+                        <div class="nav_menu_text">
+                            <p>0 товар 0  сом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <h2>Равиоли с ветчиной</h2>
+                <p class="description">
+                    Приготовлены из отборного натурального картофеля и жареных грибов.<br>
+                    Благодаря особой технологии приготовления,<br>
+                    тесто из муки высшего сорта и яиц получается тонким и упругим,<br>
+                    а начинка нежной со вкусом сливочного масла.<br>
+                    Могут быть поданы со сметаной или сливочным маслом.<br><br>
+                    Состав: картофель, грибы жареные, лук жареный,<br>
+                    молоко коровье, масло сливочное, масло подсолнечное,<br>
+                    соль поваренная, мука пшеничная высшего сорта,<br>
+                    вода питьевая, яйцо куриное, масло подсолнечное,соль поваренная.<br><br>
+                    Пищевая ценность 100 г продукта: белки – 5 г, жиры – 4 г, углеводы – 33 г.<br><br>
+                    Энергетическая ценность 100 г продукта: 190 ккал/790 кДж.
+                </p>
+                <p class="description">
+                    <br>Срок годности и условия хранения: 6 месяцев при температуре -180С.
+                 </p>
+                <p id="price" class="description">
+                    <br>Цена: 350 сом / шт
+                </p>
+                <img class="image_product" src="{% static 'images/ravioli_vetchina.png' %}" alt="">
+                <button type="submit"><img src="{% static 'images/basket_icon.svg' %}" style="vertical-align: middle">В корзину</button>
+                <button type="submit"><img src="{% static 'images/fav_icon.svg' %}" style="vertical-align: middle">В избранное</button>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer_items">
+                        <div class="footer_item">
+                            <h3>Компания</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="{% url 'about_us' %}">О нас</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Акции</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Новости</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Клиентам</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как заказать ?</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Как осуществляется доставка</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Способы оплаты</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/vector.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">Обратная связь</a>
+                            </div>
+                        </div>
+                        <div class="footer_item" style="width:250px;">
+                            <h3>Контакты</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/envelope.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">o-ce@barkad.kg</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 15px;height: 15px; background: url('{% static 'images/call.svg' %}') center no-repeat; margin-right: 15px;"></div>
+                                <a href="#">+996(312)461332</a>
+                            </div>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 32px;height: 15px; background-image: url('{% static 'images/placeholder.svg' %}') ; margin-right: 15px;"></div>
+                                <a href="#">ОсОО «Баркад»
+                                720054, Кыргызская Республика,
+                                г.Бишкек, ул. Интергельпо, 1/8</a>
+                            </div>
+                        </div>
+                        <div class="footer_item">
+                            <h3>Социальные сети</h3>
+                            <div class="footer_item_link">
+                                <div class="footer_icon" style="width: 30px;height: 30px; background: url('{% static 'images/instagram_icon.png' %}') center no-repeat; margin-right: 15px;"></div>
+                                <div class="footer_icon" style="width: 30px;height: 30px; background: url('{% static 'images/facebook_icon.png' %}') center no-repeat; margin-right: 15px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+						<p>(с)  ОсОО "Баркад", 2022.</p>
+					</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

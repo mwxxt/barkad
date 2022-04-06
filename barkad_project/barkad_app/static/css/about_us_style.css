@@ -1,0 +1,28 @@
+.wrapper {
+    width: 100%;
+    height: auto;     /*будут изменения в высоте*/
+    background: radial-gradient(50% 50% at 50% 50%, #ED1C24 0%, #BA2234 100%);
+}
+/******************************Информация о компании*********************************/
+.about_company_items .text {
+    margin: 0 auto 80px;
+    width: 900px;
+}
+.about_company_items .text p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-indent: 60px;
+}
+.about_company_items .header {
+    margin: 80px auto 40px;
+}
+.about_company_items .header h3 {
+    color: #DDCB88;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
