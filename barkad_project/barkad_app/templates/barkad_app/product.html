@@ -3,8 +3,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Главная</title>
-
+        <title>Конкретный продукт</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link rel="stylesheet" href="{% static 'fonts/Montserrat/fonts.css' %}">
 
         <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
@@ -89,7 +89,13 @@
                 <p id="price" class="description">
                     <br>Цена: 350 сом / шт
                 </p>
+
                 <img class="image_product" src="{% static 'images/ravioli_vetchina.png' %}" alt="">
+                <div class="number" data-step="1" data-min="1" data-max="100">
+	                     <input class="number-text" type="text" name="count" value="1">
+	                     <a href="#" class="number-minus">−</a>
+                         <a href="#" class="number-plus">+</a>
+                </div>
                 <button type="submit"><img src="{% static 'images/basket_icon.svg' %}" style="vertical-align: middle">В корзину</button>
                 <button type="submit"><img src="{% static 'images/fav_icon.svg' %}" style="vertical-align: middle">В избранное</button>
             </div>
@@ -165,5 +171,40 @@
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                $('body').on('click', '.number-minus, .number-plus', function () {
+                    var $row = $(this).closest('.number');
+                    var $input = $row.find('.number-text');
+                    var step = $row.data('step');
+                    var val = parseFloat($input.val());
+                    if ($(this).hasClass('number-minus')) {
+                        val -= step;
+                    } else {
+                        val += step;
+                    }
+                    $input.val(val);
+                    $input.change();
+                    return false;
+                });
+
+                $('body').on('change', '.number-text', function () {
+                    var $input = $(this);
+                    var $row = $input.closest('.number');
+                    var step = $row.data('step');
+                    var min = parseInt($row.data('min'));
+                    var max = parseInt($row.data('max'));
+                    var val = parseFloat($input.val());
+                    if (isNaN(val)) {
+                        val = step;
+                    } else if (min && val < min) {
+                        val = min;
+                    } else if (max && val > max) {
+                        val = max;
+                    }
+                    $input.val(val);
+                });
+            });
+        </script>
     </body>
 </html>

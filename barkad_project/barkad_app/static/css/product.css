@@ -62,3 +62,55 @@ button[type="submit"]:hover{
     transform: scale(1.1);
 }
 
+
+/*стили для блока увелечение продукта*/
+.number {
+	user-select: none;
+	position: absolute;
+	text-align: center;
+	padding: 0px;
+	width: 160px;
+	border: none;
+	display: inline-block;
+    margin-top: 100px;
+    margin-left: 75px;
+}
+.number-minus, .number-plus {
+	position: absolute;
+	top: 0;
+	width: 45px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	background: #ED1C24;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	font-family: arial;
+	color: #ffffff;
+	text-decoration: none;
+    border-radius: 15px;
+}
+
+.number-minus {
+	left: 0;
+}
+.number-plus {
+	right: 0;
+}
+
+.number-text{
+	display: inline-block;
+	font-size: 16px;
+	color: #000;
+	line-height: 32px;
+	height: 40px;
+	padding: 0;
+	background: #fff;
+	outline: none;
+	border: none;
+	width: 57px;
+	text-align: center;
+    border-radius: 15px;
+    font-weight: 600;
+}
